@@ -40,6 +40,9 @@ add_action( 'wp_enqueue_scripts', 'news7_enqueue_scripts' );
 
 require_once "inc/post-metabox.php";
 require_once "inc/category-metabox.php";
+require_once "inc/custom-login.php";
+require_once "inc/custom-registration-fields.php";
+require_once "inc/custom-user-avatar-upload.php";
 
 function news7_custom_upload_mimes($existing_mimes = array()) {
     $existing_mimes['webp'] = 'image/webp';

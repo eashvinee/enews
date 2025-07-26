@@ -44,11 +44,16 @@
               <a href="<?php echo wp_logout_url( home_url('/')); ?>"  class="nav-link"><svg class="bi mx-auto" width="24" height="18"><use xlink:href="#people-circle"></use></svg>  Logout</a>
         </li>
          <?php else: ?>
-         <li class="nav-item">
-          <a  href="<?php echo home_url('/wp-admin'); ?>" class="nav-link"> 
+         <li class="nav-item dropdown">
+            <a  href="#" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
               <svg class="bi mx-auto" width="24" height="18"><use xlink:href="#people-circle"></use></svg> 
               Login
-            </a>         
+            </a> 
+             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="<?php echo home_url('/wp-admin'); ?>">Login</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="<?php echo home_url('/wp-login.php?action=register'); ?>">Register</a></li>
+            </ul>        
          </li>
          <?php endif; ?>
       </ul>

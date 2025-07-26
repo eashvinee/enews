@@ -1,0 +1,161 @@
+        /* General Body and Container for Centering */
+body.login {
+    background-color: #f3f4f6; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Login Wrapper */
+#login {
+    width: 320px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+   /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Login Header (Logo/Title) */
+#login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login h1 a {
+    background-image:none; /* url('https://placehold.co/84x84/0073aa/ffffff?text=LOGO'); /* Default WP logo */
+   /* background-size: 84px;
+    background-position: center top;
+    background-repeat: no-repeat;*/
+    color: #444;
+   /* height: 84px;
+    width: 84px;*/
+    display: block;
+    height:auto;
+     text-indent: unset; /* Hide text, show background image */
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/* Login Form */
+#loginform {
+    margin-top: 20px;
+    border: none;
+        border-bottom: 1px solid #c3c4c7;
+}
+
+#loginform p {
+    margin-bottom: 15px;
+}
+
+#loginform label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+#loginform .input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#loginform .input:focus {
+    outline: none;
+    border-color: #0073aa; /* WordPress blue */
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.2);
+}
+
+/* Remember Me Checkbox */
+.login-remember {
+    margin-top: -5px; /* Adjust spacing */
+    margin-bottom: 15px;
+}
+
+.login-remember label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.login-remember input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 0;
+}
+
+/* Submit Button */
+#loginform .submit {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #0073aa; /* WordPress blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#loginform .submit:hover {
+    background-color: #005177; /* Darker blue on hover */
+}
+
+/* Navigation Links (Lost Password, Register) */
+#nav, #backtoblog {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    display: inline;
+    
+    padding: 0px !important;
+    margin: 0px!important;
+}
+#nav{float: left;}
+#backtoblog{float: right;}
+.privacy-policy-page-link{display: none;}
+
+#nav a, #backtoblog a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+#nav a:hover, #backtoblog a:hover {
+    text-decoration: underline;
+}
+
+/* Error/Message Boxes */
+.message, .login .message {
+    margin: 0 0 16px 0;
+    border-left: 4px solid #00a0d2;
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    font-size: 13px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.login #login_error {
+    border-left-color: #dc3232; /* Red for errors */
+}
+
+/*
+h1.screen-reader-text{width: 320px;
+    
+    height: 30px;
+    top: 0px;
+    clip-path: none;
+    
+    text-align: left;}*/
